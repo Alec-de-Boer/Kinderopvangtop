@@ -15,3 +15,18 @@ document.getElementById("password-submit").addEventListener("click", function ()
         document.getElementById("password-error").style.display = "block";
     }
 });
+
+// JavaScript for accordion functionality
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    });
+});

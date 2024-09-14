@@ -119,7 +119,8 @@ nav ul li a:hover {
 
 /* About Section (Full-width section below the banner) */
 .about {
-    background-color: #F09770; /* New color */
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
     padding: 50px 0;
     text-align: center;
     color: #fff; /* White text */
@@ -301,7 +302,8 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-    background-color: #F09770;
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
     color: #fff;
     padding: 20px 20px;
     position: static;
@@ -418,4 +420,3 @@ footer {
 .password-modal button:hover {
     background-color: #e65b29;
 }
-

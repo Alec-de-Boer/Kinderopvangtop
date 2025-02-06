@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .button-contact:hover {
-    background-color: #fbff00;
+    background-color: #e65b29;
 }
 
 
@@ -119,7 +119,7 @@ nav ul li a:hover {
 
 /* About Section (Full-width section below the banner) */
 .about {
-    background: url('images/green.png') no-repeat center center;
+    background: url('images/background.jpg') no-repeat center center;
     background-size: cover; /* Ensure the image covers the entire section */
     padding: 50px 0;
     text-align: center;
@@ -286,13 +286,6 @@ nav ul li a:hover {
     height: auto;
     max-width: 300px;
     height: 350x;
-    margin-bottom: 10px;
-}
-
-.service-item-overons img {
-    width: 124%;
-    height: auto;
-    height: 400%;
     margin-bottom: 10px;
 }
 

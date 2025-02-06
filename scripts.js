@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Password protection script
 document.getElementById("password-submit").addEventListener("click", function () {
     var password = document.getElementById("password-input").value;
-    var correctPassword = "kinderopvangtopper"; // Set the correct password here
+    var correctPassword = "top"; // Set the correct password here
 
     if (password === correctPassword) {
         document.getElementById("password-overlay").style.display = "none";

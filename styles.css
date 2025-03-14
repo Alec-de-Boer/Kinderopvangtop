@@ -375,7 +375,7 @@ footer {
 }
 
 /* Medium and small screens (tablets, mobile) */
-@media (max-width: 1023px) {
+@media (max-width: 2160px) {
     .footer-left {
         text-align: center;
     }
@@ -572,7 +572,7 @@ footer {
 }
 
 /* Make sure the content is centered and responsive */
-@media (max-width: 768px) {
+@media (max-width: 2160px) {
     .content-wrapper {
         flex-direction: column;
     }
@@ -662,7 +662,7 @@ footer {
 }
 
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 2160px) {
     .form-wrapper {
         padding: 15px;
     }
@@ -675,6 +675,103 @@ footer {
     .contact-form textarea {
         font-size: 0.95em;
     }
+/* dropdown styling */
+
+ /* Dropdown button styling AAA 14-08 */
+
+ .navbar {
+    overflow: hidden;
+    background-color: #FFFF;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #097070;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #097070;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* radio buttons */
+
+/* Ensure labels are displayed inline */
+label {
+    white-space: nowrap; /* Prevents text from wrapping */
+    display: inline-flex; /* Makes sure the radio button and text stay next to each other */
+    align-items: center;  /* Vertically centers the radio button and text */
+}
+
+input[type="checkbox"] {
+    margin: 4%; /* Removes any default margin around the radio button */
+    padding: 0; /* Removes padding from the radio button */
+}
+
+input[type="radio"] {
+    margin-right: 4%; /* Removes any default margin around the radio button */
+    padding: 0; /* Removes padding from the radio button */
+    margin-bottom: 0%;
+}
+
+/*contacttekst */
+
+.contacttekst {
+
+    margin-bottom: 5%;
+
+}
+
+.legediv {
+
+    margin-bottom: 5%;
+}
+
 }
 
 

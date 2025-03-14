@@ -25,6 +25,30 @@
         </div>
     </div>
 
+    <script>
+        // Your JavaScript code here
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none"; // Collapse if it's already open
+            } else {
+                dropdown.style.display = "block"; // Expand if it's closed
+            }
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var dropdown = dropdowns[i];
+                    if (dropdown.style.display === "block") {
+                        dropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
     <!-- Main Content (Hidden initially) -->
     <div id="main-content" style="display: none;">
         <!-- Header Section -->
@@ -33,33 +57,23 @@
                 <div class="logo" onclick="location.href='index.html';">&nbsp;
                     <img src="images/logo.png" alt="T.O.P. Logo">
                 </div>
-                    <div class="navbar">
-                        <div class="dropdown">
-                          <button class="dropbtn">Opvang 
-                            <i class="fa fa-caret-down"></i>
-                          </button>
-                          <div class="dropdown-content">
-                            <a href="toppertjes.html">De Toppertjes</a>
-                            <a href="kanjers.html">De Kanjers</a>
-                            <a href="avonturiers.html">De Avontuurmakers</a>
-                          </div>
-                        </div> 
-                        <a href="overons.html">Over ons</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Beleid 
-                              <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Beleid 1</a>
-                              <a href="#">Beleid 2</a>
-                              <a href="#">Beleid 3</a>
-                              
-                            </div>
-                          </div>
-                          <a href="tarieven.html">Tarieven</a>
-                          <a href="inschrijven.html">Inschrijven</a>
-                          <a href="contact.html">Contact</a> 
-                      </div>
+                <nav>
+                    <ul>
+                <!-- Dropdown for Opvang -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Opvang</a>
+                    <ul class="dropdown-content" id="dropdownMenu">
+                        <li><a href="opvang.html">Opvang Page</a></li>
+                        <!-- Add more dropdown items here if needed -->
+                    </ul>
+                </li>
+                        <li><a href="overons.html">Over ons</a></li>
+                        <li><a href="beleid.html">Beleid</a></li>
+                        <li><a href="tarieven.html">Tarieven</a></li>
+                        <li><a href="inschrijven.html" class="button-outline">Inschrijven</a></li>
+                        <li><a href="contact.html" class="button-contact">Contact</a></li>
+                    </ul>
+                </nav>
                 <div class="social-icons">
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -141,35 +155,19 @@
             <h2>Talent Ontwikkeling Plezier</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <div class="service-toppertjes">
-                        <a href="toppertjes.html"> <img src="images/romyevy.jpg" alt="Placeholder Image"> </a>
+                    <img src="images/romyevy.jpg" alt="Placeholder Image">
                     <p class="service-title">De Toppertjes</p>
                     <p class="service-subtitle">Kinderopvang 0–4 jaar</p>
                 </div>
-                </div>
                 <div class="service-item">
-                    <div class="service-kanjers">
-
-                    <a href="kanjers.html">
-
                     <img src="images/romy.jpg" alt="Placeholder Image">
-
-                    </a>
-
                     <p class="service-title">De Kanjers</p>
                     <p class="service-subtitle">Peuterspeelzaal 2–4 jaar</p>
                 </div>
-            </div>
                 <div class="service-item">
-                    <div class="service-avonturiers"></div>
-                    <a href="avonturiers.html">
-
                     <img src="images/collin2.jpg" alt="Placeholder Image">
-                </a>
-
                     <p class="service-title">De Avontuurmakers</p>
                     <p class="service-subtitle">BSO 4–12 jaar</p>
-                </div>
                 </div>
             </div>
         </section>

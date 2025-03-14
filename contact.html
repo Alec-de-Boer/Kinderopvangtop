@@ -72,6 +72,10 @@
         <section class="contact-form-section">
             <div class="form-wrapper">
                 <h2>Contactformulier</h2>
+                <p class="contacttekst">
+                    Wilt u op de hoogte gehouden worden over de voortgang van onze plannen voor kinderopvang T.O.P. in Ermelo? Vul dan onderstaand contactformulier in.
+                </p>
+
                 <form action="#" method="POST" class="contact-form">
                     <label for="name">Naam*</label>
                     <input type="text" id="name" name="name" required>
@@ -79,10 +83,57 @@
                     <label for="email">E-mail*</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="phone">Telefoonnummer*</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" id="phone" name="phone">
 
-                    <label for="message">Bericht:</label>
+                    <div class="legediv">
+
+                    </div>
+
+                    <label for="date">Opvang gewenst per*</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="date">Geboortedatum kind 1:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="date">Geboortedatum kind 2:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="date">Geboortedatum kind 3:</label>
+                    <input type="date" id="date" name="date">
+
+                    <div class="legediv">
+
+                    </div>
+
+                    <label for="Voorkeursdagen">Voorkeursdagen indien bekend:</label>
+
+                    <label for="Maandag"><input type="checkbox" id="Maandag" name="DatumOpvang" value="Maandag"> Maandag</label>
+                    <label for="Dinsdag"><input type="checkbox" id="Dinsdag" name="DatumOpvang" value="Dinsdag"> Dinsdag</label>
+                    <label for="Woensdag"><input type="checkbox" id="Woensdag" name="DatumOpvang" value="Woensdag"> Woensdag</label>
+                    <label for="Donderdag"><input type="checkbox" id="Donderdag" name="DatumOpvang" value="Donderdag"> Donderdag</label>
+                    <label for="Vrijdag"><input type="checkbox" id="Vrijdag" name="DatumOpvang" value="Vrijdag"> Vrijdag</label> <br> <br>
+
+                    <label for="school">Toekomstige of huidige school:*</label>
+                    <textarea id="school" name="school" rows="2" required></textarea>
+
+                    <div class="legediv">
+
+                    </div>
+
+                    <label for="marketing">Nieuwsbrief en updates:*</label>
+                    
+                    <label for="Ja"><input type="radio" id="Ja" name="Marketing" value="Ja"> Ja, ik wil graag op de hoogte blijven van nieuwsbrieven en updates. </label>
+                    <label for="Nee"><input type="radio" id="Nee" name="Marketing" value="Nee"> Nee, ik wil alleen informatie ontvangen over de beschikbaarheid.</label>
+
+                    <div class="legediv">
+
+                    </div>
+                    
+
+
+
+                    <label for="message">Opmerkingen:</label>
                     <textarea id="message" name="message" rows="5"></textarea>
 
                     <button type="submit" class="submit-button">Verstuur</button>

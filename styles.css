@@ -11,6 +11,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
+    
 }
 
 /* Header styles */
@@ -49,8 +50,8 @@ nav ul li a {
 
 /* Hover effect for links */
 nav ul li a:hover {
-    color: #f67b3b; /* Change the text color on hover */
-    border-bottom: 2px solid #f67b3b; /* Optional: add an underline effect */
+    color: #c3c4b5; /* Change the text color on hover */
+    border-bottom: 2px solid #c3c4b5; /* Optional: add an underline effect */
 }
 
 .button-outline {
@@ -61,7 +62,7 @@ nav ul li a:hover {
 }
 
 .button-outline:hover {
-    border-color: #f67b3b;
+    border-color: #1f1e1d;
 }
 
 .button-contact {
@@ -73,7 +74,7 @@ nav ul li a:hover {
 }
 
 .button-contact:hover {
-    background-color: #fbff00;
+    background-color: #cc822d;
 }
 
 
@@ -127,7 +128,7 @@ nav ul li a:hover {
 }
 
 .about h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-bottom: 10px;
 }
 
@@ -198,7 +199,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e65b29;
+    background-color: #7d7e77;
 }
 
 /* Info Section (text + video) */
@@ -259,18 +260,20 @@ nav ul li a:hover {
 .services {
     padding: 60px 0;
     text-align: center;
+    color: #097070;
 }
 
 .services h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-bottom: 50px;
+
 }
 
 .services-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -290,7 +293,7 @@ nav ul li a:hover {
 }
 
 .service-item-overons img {
-    width: 124%;
+    width: 100%;
     height: auto;
     height: 400%;
     margin-bottom: 10px;
@@ -679,11 +682,7 @@ footer {
 
  /* Dropdown button styling AAA 14-08 */
 
- .navbar {
-    overflow: hidden;
-    background-color: #FFFF;
-  }
-  
+ 
   .navbar a {
     float: left;
     font-size: 16px;
@@ -710,7 +709,7 @@ footer {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(235, 236, 228);
   }
   
   .dropdown-content {
